@@ -29,6 +29,7 @@ import {
 } from 'lucide-react'
 
 const whatsappUrl = 'https://wa.me/2348057020989'
+const officeAddress = '3 Oroku Street, Off Park Road, Ebute Metta, Lagos'
 
 const services = [
   ['Global Vehicle Sourcing', Globe2, 'Premium access to international suppliers, dealers, auctions, and market-specific inventory.'],
@@ -486,6 +487,10 @@ function App() {
               <p className="mt-5 max-w-3xl text-lg leading-8 text-black/75">
                 Let Erolds Auto Limited help you source, purchase, and deliver quality vehicles from anywhere in the world.
               </p>
+              <p className="mt-5 inline-flex max-w-2xl items-start gap-3 text-sm font-semibold text-black/80">
+                <MapPin className="mt-0.5 size-5 shrink-0" />
+                {officeAddress}
+              </p>
             </div>
             <a
               href={whatsappUrl}
@@ -507,6 +512,10 @@ function App() {
               <MessageCircle className="size-4" />
               +2348057020989
             </a>
+            <p className="mt-3 flex max-w-sm items-start gap-2 text-sm leading-6 text-zinc-500">
+              <MapPin className="mt-1 size-4 shrink-0 text-[#d9b46f]" />
+              {officeAddress}
+            </p>
           </div>
           
           <p className="text-sm text-zinc-600">Copyright 2026 Erolds Auto Limited. All rights reserved.</p>
